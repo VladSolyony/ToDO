@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="styles/gauge.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+<div class="wrapper">
+    <h2 class="title">Today</h2>
+    <div class="container">
+        <div class="gauge__container">
+            <div class="gauge">
+                <div class="gauge__average">
+                    <svg viewBox="0 0 120 120" class="gauge__cirlce" fill="none" stroke-width="7">
+                        <circle class="gauge__cirlce-base" r="53" cx="60" cy="60"></circle>
+                        <circle
+                                class="gauge__cirlce-arc"
+                                r="53" cx="60" cy="60"
+                                transform="rotate(-90 60 60)"
+                                stroke-dashoffset="0"
+                                stroke-dasharray="1 329"></circle>
+                    </svg>
+                    <div class="gauge__percent">40</div>
+                </div>
+            </div>
+            <p class="tasks__number"><span class="tasks__number-item">0</span> tasks to do</p>
+        </div>
+        <div class="todo__list">
+            <div class="todo__container">
+                <div class="todo__item">
+                    <div class="todo__checkbox">
+                        <input class="todo__input" type="checkbox" id="task1">
+                        <!-- <label for="task1" class="todo__label"></label>
+                    </div>
+                    <div class="todo__text">task 1</div>
+                </div>
+                <div class="todo__item">
+                    <div class="todo__checkbox">
+                        <input class="todo__input" type="checkbox" id="task2">
+                        <label for="task2" class="todo__label"></label>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <form class="form">
+            <button class="form__button"><img src="images/+.svg"></button>
+            <input type="text" class="form__text" placeholder="What's next?">
+        </form>
+        <!-- <div class="button incr">+</div>
+        <div class="button decr">-</div> -->
+    </div>
+</div>
+<div class="new">
+    <img src="images/newday.svg" alt="New day icon" class="new__icon">
+    <div class="new__text">
+        New Day
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts/helpers.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+
+</body>
+</html>
